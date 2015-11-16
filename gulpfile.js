@@ -29,4 +29,8 @@ gulp.task('styles',function () {
 	//config.assetsDir+'/less/**/*.less'
 });
 
+gulp.task('watch', function(){
+	gulp.watch(config.assetsDir+'/less/**/*.less',['styles']);
+});
+
 gulp.task('default', ['styles']);
